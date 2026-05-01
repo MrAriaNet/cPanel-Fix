@@ -47,7 +47,7 @@ Publish as a new repo under your account (e.g. `https://github.com/MrAriaNet/cPa
 - **CSF:** Python edits **`/etc/csf/csf.conf`** (quoted `TCP_IN`); backups use **`.bak.`** timestamps.
 - **Kernel:** interim **`algif_aead`** block per [Copy Fail](https://copy.fail/#copy-fail); real fix = patched kernel package.
 - **Domains:** proxy strip hits **80/443** host-style names; combine with CSF for port-level control ([proxy KB](https://support.cpanel.net/hc/en-us/articles/4405754485527-How-to-remove-service-subdomains-WHM-cPanel-Webmail-Webdisk-)).
-- **Extra hardening:** checklist-style steps (WHM tweaks, etc.); **`--extra-hardening-csf`** overwrites **`TCP_IN`** with a short list — expect **no 2087 / custom apps** unless you edit the script.
+- **Extra hardening:** checklist-style steps (WHM tweaks, etc.); **`--extra-hardening-csf`** overwrites **`TCP_IN`** with a short list - expect **no 2087 / custom apps** unless you edit the script.
 
 ---
 
@@ -78,13 +78,13 @@ Restore **`csf.conf`** / **`csf.conf.bak.*`**, remove modprobe drop-in after a f
 
 - [CVE-2026-41940](https://support.cpanel.net/hc/en-us/articles/40073787579671-Security-CVE-2026-41940-cPanel-WHM-WP2-Security-Update-04-28-2026)
 - [CVE-2026-31431](https://copy.fail/#copy-fail)
-- [Qualys — CVE-2026-41940](https://threatprotect.qualys.com/2026/04/30/cpanel-and-whm-authentication-bypass-vulnerability-exploited-in-the-wild-cve-2026-41940/)
+- [Qualys - CVE-2026-41940](https://threatprotect.qualys.com/2026/04/30/cpanel-and-whm-authentication-bypass-vulnerability-exploited-in-the-wild-cve-2026-41940/)
 
 ---
 
 ## Acknowledgments
 
-**Saeed Yavari** ([@iSaeedYavari](https://t.me/iSaeedYavari)) — context and hardening checklist reflected in **`--extra-hardening`** / **`--extra-hardening-csf`**.
+**Saeed Yavari** ([@iSaeedYavari](https://t.me/iSaeedYavari)) - context and hardening checklist reflected in **`--extra-hardening`** / **`--extra-hardening-csf`**.
 
 ---
 
@@ -92,4 +92,4 @@ Restore **`csf.conf`** / **`csf.conf.bak.*`**, remove modprobe drop-in after a f
 
 Use only on systems you administer or are authorized to test.
 
-© Aria Jahangiri Far — [github.com/MrAriaNet](https://github.com/MrAriaNet)
+© Aria Jahangiri Far - [github.com/MrAriaNet](https://github.com/MrAriaNet)
