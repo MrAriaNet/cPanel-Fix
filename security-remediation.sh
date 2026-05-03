@@ -308,7 +308,7 @@ csf_ensure_cpanel_ports() {
   fi
 
   for p in "${CSF_CPANEL_PORTS[@]}"; do
-    [[ ",${ports_csv}," == *",${p},""* ]] || missing+=("$p")
+    [[ ",${ports_csv}," == *",${p},"* ]] || missing+=("$p")
   done
   if [[ "${#missing[@]}" -eq 0 ]]; then
     log "CSF TCP_IN already includes standard cPanel/WHM ports (${CSF_CPANEL_PORTS[*]})."
